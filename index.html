@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Minesweeper</title>
+    </head>
+    <body>
+        <div class="minesweeper">
+            <h1 class="minesweeper__header">Minesweeper</h1>
+
+            <table class="minesweeper__grid" id="minesweeper-grid"></table>
+            <button
+                class="minesweeper__reset"
+                id="reset"
+                onclick="createGrid()"
+            >
+                Reset
+            </button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

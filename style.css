@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Peralta&family=Silkscreen&display=swap");
+body {
+  background-color: rgb(56, 55, 55);
+}
+
+.minesweeper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.minesweeper__header {
+  font-family: "Peralta", cursive;
+  font-size: 40px;
+  color: #c7ceea;
+}
+.minesweeper__reset {
+  font-size: 18px;
+  height: 3em;
+  width: 7em;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5%;
+  border: 0px;
+  background-color: #ff9994;
+}
+.minesweeper__reset:hover {
+  background-color: #ff817a;
+  cursor: pointer;
+}
+.minesweeper__reset:active {
+  background-color: #ff6961;
+}
+.minesweeper__grid TR TD {
+  background-color: #daeaf6;
+  width: 20px;
+  height: 20px;
+  font-family: "Silkscreen", cursive;
+  text-align: center;
+}
+.minesweeper__grid TR TD.clicked {
+  background-color: #90b8d9;
+}
+.minesweeper__grid TR TD.mine {
+  background-color: #ff9aa2;
+}

@@ -1,0 +1,50 @@
+@use "./partials/palette";
+@import url("https://fonts.googleapis.com/css2?family=Peralta&family=Silkscreen&display=swap");
+body {
+    background-color: palette.$background-colour;
+}
+.minesweeper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+    &__header {
+        font-family: "Peralta", cursive;
+        font-size: 40px;
+        color: palette.$title-colour;
+    }
+    &__reset {
+        font-size: 18px;
+        height: 3em;
+        width: 7em;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5%;
+        border: 0px;
+        background-color: palette.$reset-button;
+        &:hover {
+            background-color: palette.$reset-button-hover;
+            cursor: pointer;
+        }
+        &:active {
+            background-color: palette.$reset-button-click;
+        }
+    }
+    &__grid TR TD {
+        background-color: palette.$grid-colour;
+        width: 20px;
+        height: 20px;
+        font-family: "Silkscreen", cursive;
+        text-align: center;
+        &.clicked {
+            background-color: palette.$grid-colour-clicked;
+        }
+        &.mine {
+            background-color: palette.$mine-colour;
+        }
+    }
+}
