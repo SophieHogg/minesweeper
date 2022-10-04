@@ -2,13 +2,11 @@
 
 An minesweeper game developed in HTML and JS as a personal project.
 
-To Do:
+## To Do:
 
--   Decide colour scheme
--   fill out page
--   add scripts to create grid and add mines
 -   add scripts for what happens on click
 -   add possibility for user to mark squares for mines
+-   add ability to change number of mines that appear via a text box
 
 ## Styling and Design
 
